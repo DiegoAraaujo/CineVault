@@ -1,14 +1,14 @@
 header{
   display: flex;
-  width: 800px;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 1rem;
-  color: white;
+  color: var(--secondary-color);
+  margin-bottom: 3rem;
 }
 
 h1{
-  font-size:40px;
+  font-size:4rem;
 }
 
 .menu{
@@ -17,7 +17,7 @@ h1{
   gap: 3rem;
 }
 ion-icon {
-  color: hsl(0, 0%, 100%);
+  color: var(--icons-color);
   font-size: 35px;
 }
 .menu li ion-icon{
@@ -25,8 +25,15 @@ ion-icon {
   cursor: pointer;
 }
 .menu li ion-icon:hover{
-  border-bottom: rgb(255, 255, 255) solid 1px;
+  border-bottom: var(--secondary-color) solid 1px;
   transform: scale(1.1);
 }
 
-
+@media (max-width: 730px) {
+  h1{
+    font-size:3rem;
+  }
+  ion-icon {
+    font-size: 2.5rem;
+  } 
+}

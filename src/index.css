@@ -1,8 +1,9 @@
 :root{
   --primaryColor:#0D1B2A;
-  --sections-color: #26334C;
-  --buttons-color: white;
+  --sectionColor: #26334C;
+  --secondary-color: white;
   --icons-color: #E0E1DD;
+  --shadow-color: rgba(0, 0, 0, 0.564);
 }
 
 *{
@@ -20,4 +21,5 @@ body{
   flex-direction: column;
   align-items: center;
   background-color: var(--primaryColor);
+  padding: 1rem;
 }
