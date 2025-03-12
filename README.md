@@ -24,12 +24,14 @@
 **Interactivity:** Allows real-time interaction, such as adding/removing titles from the list without reloading the page.
 
 --
+
 ## Technologies Used
 - **React** - JavaScript library to build dynamic, reusable, and interactive user interfaces. It allows state management and efficient component rendering
 - **CSS3** - Used to style the application's layout and ensure a responsive and modern design, suitable for various screen sizes.
 - **JavaScript** - The foundation for the application's logic, enabling user interaction with the interface, such as adding/removing titles and fetching information.
 - **TMDb API** - Free API for searching and displaying information about movies and TV shows. Provides access to details like synopses, ratings, and images.
 
+--
 
 ## Accessing the Project 🔓
 CineVault is public and can be accessed by anyone. However, collaboration is not enabled to ensure the integrity of the project. If you would like to contribute, please contact the repository maintainer to discuss how to collaborate in a controlled manner.
