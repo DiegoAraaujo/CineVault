@@ -1,0 +1,32 @@
+header{
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1rem;
+  color: white;
+}
+
+h1{
+  font-size:40px;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+ion-icon {
+  color: hsl(0, 0%, 100%);
+  font-size: 35px;
+}
+.menu li ion-icon{
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.menu li ion-icon:hover{
+  border-bottom: rgb(255, 255, 255) solid 1px;
+  transform: scale(1.1);
+}
+
+
