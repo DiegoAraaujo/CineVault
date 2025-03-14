@@ -1,0 +1,255 @@
+:root{
+  --primaryColor:#0D1B2A;
+  --sectionColor: #26334C;
+  --secondary-color: white;
+  --icons-color: #E0E1DD;
+  --shadow-color: rgba(0, 0, 0, 0.564);
+  --assistantColor:#778DA9
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: var(--primaryColor);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+input{
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  max-width: 20rem;
+  width: 100%;
+  border: 0;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 50px;
+  background-color: rgb(101, 125, 243);
+  color: var(--secondary-color);
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  box-shadow: 1px 1px var(--shadow-color);
+  transition: all ease 0.3s;
+  margin-right: 0.5rem;
+}
+
+button:hover{
+  color: var(--secondary-color);
+  background-color: var(--primaryColor);
+}
+/* header */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 3rem;
+  max-width: 1050px;
+  width: 100%;
+}
+
+h1{
+  font-size:4rem;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+ion-icon {
+  color: var(--icons-color);
+  font-size: 3.5rem;
+}
+
+.menu li{
+  transition: all ease 0.4s;
+  cursor: pointer;
+}
+.menu li:hover{
+  background-color: var(--sectionColor);
+}
+
+
+.menu li{
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+/* section search filmes */
+
+.container{
+  max-width: 1050px;
+  border-radius: 70px;
+  background-color: var(--sectionColor);
+  padding: 2rem 4rem;
+  box-shadow: 4px 4px 10px 1px var(--shadow-color);
+}
+.section-search-movie{
+  position: relative;
+  min-height: 230px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.section-title{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  transform: rotate(-5deg);
+  color: var(--primaryColor);
+  background-color: var(--secondary-color);
+  padding: 0.7rem 4rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+
+.section-title ion-icon{
+  color: var(--primaryColor);
+  font-size: 2rem;
+  margin-left: 0.6rem;
+}
+
+@media (max-width: 690px) {
+  .section-search-movie{
+    flex-direction: column;
+  }
+
+  .section-title{
+    top: -25px;
+    padding: 0.5rem 3rem;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+
+  ion-icon {
+    font-size: 3rem;
+  }
+
+  .poster-image{
+    height: 150px !important;
+  }
+  .movie-info > div{
+    height: 150px !important;
+  }
+  .movie-info > div h2{
+    font-size: 1.3rem;
+  }
+  input{
+    max-width: 15rem;
+    padding: 0.4rem;
+  }
+  button{
+    padding: 0.2rem 3rem;
+  }
+}
+
+.filmInfoForm{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  flex: 1;
+}
+
+.filmInfoForm div{
+  margin-bottom: 1rem;
+
+}
+label{
+  display: inline-block;
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  width: 10rem;
+  margin-bottom: 0.3rem;
+}
+
+
+input::placeholder{
+  text-align: center;
+  opacity: 50%;
+  font-size: 1rem;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.movie-info > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--secondary-color);
+  height: 100%;
+  margin-left: 2rem;
+}
+
+.buttons-searchMovie{
+  display: flex;
+}
+
+.poster-image {
+  height: 230px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 8px var(--shadow-color);
+}
+
+.section-list-movies{
+  position: relative;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.buttons-controller-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.buttons-controller-list button ion-icon{
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+.item-film{
+  display: flex;
+  flex-direction: column;
+}
+
+.active{
+  background-color: var(--assistantColor);
+}
