@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CineVault</title>
     <link rel="stylesheet" href="index.css" />
-
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -59,12 +59,12 @@
             />
           </div>
           <div class="buttons-searchMovie">
-            <button>search</button>
-            <button>Add to List</button>
+            <button id="searchButton">search</button>
+            <button id="addToList">Add to List</button>
           </div>
         </div>
 
-        <div class="movie-info">
+        <div class="movie-info" id="movie-info">
           <img src="./assets/poster-tema.png" alt="" class="poster-image" />
           <div>
             <h2>Search for your preference film</h2>
@@ -88,48 +88,14 @@
         </div>
       </section>
 
-      <section class="section-list-movies container">
+      <section class="section-list-movies container" id="section-list-movies-container">
         <div class="section-title">
           <h2>Your Film list</h2>
           <ion-icon name="search"></ion-icon>
         </div>
-
-        <div class="item-film">
-          <img src="assets/poster-tema.png" alt="" class="poster-image" />
-          <div class="buttons-controller-list">
-            <button>watched <ion-icon name="checkmark-sharp"></ion-icon></button>
-            <button>remove <ion-icon name="trash-sharp"></ion-icon></button>
-          </div>
-        </div>
-        <div class="item-film">
-          <img src="assets/poster-tema.png" alt="" class="poster-image" />
-          <div class="buttons-controller-list">
-            <button>watched <ion-icon name="checkmark-sharp"></ion-icon></button>
-            <button>remove <ion-icon name="trash-sharp"></ion-icon></button>
-          </div>
-        </div>
-        <div class="item-film">
-          <img src="assets/poster-tema.png" alt="" class="poster-image" />
-          <div class="buttons-controller-list">
-            <button>watched <ion-icon name="checkmark-sharp"></ion-icon></button>
-            <button>remove <ion-icon name="trash-sharp"></ion-icon></button>
-          </div>
-        </div>
-        <div class="item-film">
-          <img src="assets/poster-tema.png" alt="" class="poster-image" />
-          <div class="buttons-controller-list">
-            <button>watched <ion-icon name="checkmark-sharp"></ion-icon></button>
-            <button>remove <ion-icon name="trash-sharp"></ion-icon></button>
-          </div>
-        </div>
-        <div class="item-film">
-          <img src="assets/poster-tema.png" alt="" class="poster-image" />
-          <div class="buttons-controller-list">
-            <button>watched <ion-icon name="checkmark-sharp"></ion-icon></button>
-            <button>remove <ion-icon name="trash-sharp"></ion-icon></button>
-          </div>
-        </div>
       </section>
     </main>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/notie"></script>
   </body>
 </html>
