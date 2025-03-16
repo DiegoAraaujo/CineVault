@@ -39,7 +39,7 @@ CineVault is a public project, and anyone can use it to organize their movie col
 
 ## How to Run Locally
 1. **Clone the repository:**
-````git clone https://github.com/DiegoAraaujo/CineVault```
-2. **Open the project folder:**
+```git clone https://github.com/DiegoAraaujo/CineVault```
+3. **Open the project folder:**
 ```cd CineVault```
-3. **Open the index.html file in your browser.**
+4. **Open the index.html file in your browser.**
