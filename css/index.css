@@ -1,0 +1,163 @@
+
+/* Section Search Movie */
+
+.movie-search-section {
+  position: relative;
+  min-height: 230px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.movie-search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  flex: 1;
+}
+
+.movie-search-form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: inline-block;
+  color: var(--secondary-color);
+  font-size: 1.4rem;
+  width: 10rem;
+  margin-bottom: 0.3rem;
+}
+
+input {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  max-width: 20rem;
+  width: 100%;
+  border: 0;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input::placeholder {
+  text-align: center;
+  opacity: 50%;
+  font-size: 1rem;
+}
+
+.search-buttons {
+  display: flex;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 50px;
+  background-color: rgb(101, 125, 243);
+  color: var(--secondary-color);
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  box-shadow: 1px 1px var(--shadow-color);
+  transition: all ease 0.3s;
+  margin-right: 0.5rem;
+}
+
+button:hover {
+  color: var(--secondary-color);
+  background-color: var(--primaryColor);
+}
+
+.movie-details {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.movie-details > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--secondary-color);
+  height: 100%;
+  margin-left: 2rem;
+}
+
+/* Section List Movies */
+.movie-list-section {
+  position: relative;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  display: flex;
+}
+
+#movie-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+
+.item-film {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons-controller-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.buttons-controller-list button ion-icon {
+  font-size: 1rem;
+  margin-left: 0.3rem;
+}
+
+/* Media Queries */
+@media (max-width: 690px) {
+  .movie-search-section {
+    flex-direction: column;
+  }
+
+  .title-container {
+    top: -25px;
+    padding: 0.5rem 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  ion-icon {
+    font-size: 3rem;
+  }
+
+  .movie-poster {
+    height: 150px !important;
+  }
+
+  .movie-details > div {
+    height: 150px !important;
+  }
+
+  .movie-details > div h2 {
+    font-size: 1.3rem;
+  }
+
+  input {
+    max-width: 15rem;
+    padding: 0.4rem;
+  }
+
+  button {
+    padding: 0.2rem 3rem;
+  }
+}

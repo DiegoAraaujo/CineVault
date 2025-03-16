@@ -1,0 +1,33 @@
+.watched-movies-section{
+  position: relative;
+  min-height: 230px;
+  gap: 1rem;
+  padding-top: 5rem;
+}
+
+main {
+  max-width: 1000px;
+  width: 100%;
+}
+#watched-movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.poster-image {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.item-watched {
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+}
+.item-watched > div {
+  color: var(--primaryColor);
+  text-align: center;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+}

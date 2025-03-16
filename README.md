@@ -1,32 +1,45 @@
 # CineVault: Organize Your Favorite Productions to Watch Later 🎬📺
 
 ## Overview
-**CineVault** was created to help movie enthusiasts organize their favorite lists. With it, you can easily search and add titles, making it easier to manage what to watch in the future.
+**CineVault** is a web application designed to help movie lovers organize their watchlist and keep track of the films they've watched. With an intuitive interface, you can search for movies, add them to your list, mark them as watched, and manage your collection effortlessly.
 
 
 ## How to Use
-1. **Access the platform** and explore the available content.
-2. **Search for titles** based on your preferences.
-3. **Add productions to your list** so you don't miss anything you want to watch.
-4. **Mark as watched** or remove a title whenever you want.
-5. **Consult your history** to remember what you've already watched.
-6. **Use filters and advanced searches** to find titles more quickly.
-7. **Your list is saved automatically**, so you can close the browser without worries.
+1. **Search for Movies:** Enter the movie name and release year to find details about your favorite films.
+2. **Add to Your List:** Save movies to your personal watchlist for easy access later.
+3. **Mark as Watched:** Move movies to your "Watched History" to keep track of what you've already seen.
+
+4. **Remove Movies:** Easily remove movies from your list if you change your mind.
+5. **Automatic Saving:** Your list is saved in your browser, so you won't lose your data even if you close the page.
 
 
 ## Features
-**Search and Filter:** Quick search by title, genre, release date, and more.
-**Watched History**: Mark and consult what you've already watched, keeping an organized record.
-**Favorite List:** Add your favorite productions and create a personalized list to make tracking easier.
-**Interactivity:** Allows real-time interaction, such as adding/removing titles from the list without reloading the page.
+**Movie Search:** Quickly find movies by title and release year using the OMDb API.
+
+**Watchlist:** Add movies to your personal list and organize them for future viewing.
+
+**Watched History:** Mark movies as watched and keep a record of your viewing history.
+
+**Interactive Interface:** Add, remove, and manage movies in real-time without reloading the page.
+
+**Responsive Design:** Enjoy a seamless experience on both desktop and mobile devices.
 
 
 ## Technologies Used
-- **React** - JavaScript library to build dynamic, reusable, and interactive user interfaces. It allows state management and efficient component rendering
-- **CSS3** - Used to style the application's layout and ensure a responsive and modern design, suitable for various screen sizes.
-- **JavaScript** - The foundation for the application's logic, enabling user interaction with the interface, such as adding/removing titles and fetching information.
-- **TMDb API** - Free API for searching and displaying information about movies and TV shows. Provides access to details like synopses, ratings, and images.
+- **HTML5:** The backbone of the application's structure.
+**CSS3:** Used for styling and creating a responsive, modern design.
+- **JavaScript:** Powers the interactivity and logic of the - application, such as fetching movie data and managing the watchlist.
+- **OMDb API:** Provides access to movie details, including titles, posters, plots, and release years.
+- **LocalStorage:** Saves your watchlist and watched history directly in your browser.
 
 
 ## Accessing the Project 🔓
-CineVault is public and can be accessed by anyone. However, collaboration is not enabled to ensure the integrity of the project. If you would like to contribute, please contact the repository maintainer to discuss how to collaborate in a controlled manner.
+CineVault is a public project, and anyone can use it to organize their movie collection. However, contributions to the repository are currently disabled to maintain the project's integrity. If you'd like to collaborate or have suggestions, feel free to contact the repository maintainer.
+
+
+## How to Run Locally
+1. **Clone the repository:**
+````git clone https://github.com/DiegoAraaujo/CineVault```
+2. **Open the project folder:**
+```cd CineVault```
+3. **Open the index.html file in your browser.**

@@ -1,0 +1,103 @@
+:root {
+  --primaryColor: #0d1b2a;
+  --sectionColor: #26334c;
+  --secondary-color: white;
+  --icons-color: #e0e1dd;
+  --shadow-color: rgba(0, 0, 0, 0.564);
+  --assistantColor: #778da9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--primaryColor);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 3rem;
+  max-width: 1050px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.navigation-menu {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+}
+
+.navigation-menu li {
+  transition: all ease 0.4s;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.navigation-menu li:hover {
+  background-color: var(--sectionColor);
+}
+
+.active-tab {
+  background-color: var(--assistantColor);
+}
+
+
+/* Icons */
+ion-icon {
+  color: var(--icons-color);
+  font-size: 3.5rem;
+}
+.container {
+  max-width: 1050px;
+  border-radius: 70px;
+  background-color: var(--sectionColor);
+  padding: 5rem 4rem 2rem 4rem;
+  box-shadow: 4px 4px 10px 1px var(--shadow-color);
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  transform: rotate(-5deg);
+  color: var(--primaryColor);
+  background-color: var(--secondary-color);
+  padding: 0.7rem 4rem;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+
+.title-container ion-icon {
+  color: var(--primaryColor);
+  font-size: 2rem;
+  margin-left: 0.6rem;
+}
+
+
+.movie-poster {
+  height: 230px;
+  border-radius: 30px;
+  box-shadow: 1px 1px 8px var(--shadow-color);
+}
