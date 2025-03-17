@@ -25,6 +25,12 @@ main {
   background-color: var(--secondary-color);
   border-radius: 30px;
 }
+
+.item-watched > img{
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .item-watched > div {
   color: var(--primaryColor);
   text-align: center;
